@@ -1,0 +1,19 @@
+{
+    "name": "instance-code/remotelock",
+    "license": "MIT",
+    "description": "A simple way to access remotelock with laravel framework",
+    "keywords": ["laravel remotelock", "php remotelock", "instance-code"],
+    "authors": [
+        {
+            "name": "Tan Nguyen",
+            "email": "tannq@fabbi.io"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "InstanceCode\\Remotelock\\": "src/"
+        }
+    },
+    "prefer-stable": true
+}
