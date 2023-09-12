@@ -66,8 +66,11 @@ class Client
 
     public function http(): PendingRequest
     {
-        return Http::withHeaders($this->headers)
-        ->withBody(json_encode($this->params));
+        $http = Http::withHeaders($this->headers);
+        if(!empty($this->params)) {
+            $http = $http->withBody(json_encode($this->params));
+        }
+        return $http;
     }
 
     public function setRequestUrl(string $uri = '')
